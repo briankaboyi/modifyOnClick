@@ -23,3 +23,26 @@
 .hidden{
 display: none;
 }
+ .content-box{
+    transition:all ease-in 500ms;
+    position: relative;
+    animation: reveal 1s forwards;
+    transition-timing-function: cubic-bezier(0.235, 0.730, 0.460, 0.960);
+ }
+ .reveal{
+    animation: reveal 1s forwards;
+    transition-timing-function: cubic-bezier(0.235, 0.730, 0.460, 0.960);
+ }
+
+@keyframes reveal{
+    0%{
+        left:15px ;
+        top:50px ;
+        opacity: 0;
+    }
+    100%{
+        left:0px ;
+        top:0px ;
+        opacity: 1;
+    }
+}
